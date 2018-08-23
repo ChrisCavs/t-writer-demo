@@ -1,0 +1,29 @@
+body {
+  width: 80%;
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  padding: 10px 15px;
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+a:hover {
+  color: white;
+  background-color: black;
+}
+
+.test {
+  font-size: 40px;
+}
