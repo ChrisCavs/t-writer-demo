@@ -48,6 +48,20 @@ document.addEventListener('DOMContentLoaded', () => {
     .rest(2000)
     .then(clearAll)
 
+  // DEMO 4
+
+  const test5 = document.querySelector('.test5')
+
+  const testTw5 = new Typewriter(test5, {
+    loop: true,
+    typeColor: 'blue'
+  })
+
+  testTw5
+    .type('A simple syntax makes it easy.')
+    .rest(500)
+    .start()
+
   // DEMO 1
 
   const test1 = document.querySelector('.test1')
