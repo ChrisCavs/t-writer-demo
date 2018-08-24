@@ -33,48 +33,48 @@
     <section class="demo">
       <div class="test1 test"></div>
       <pre class="code-block">
-    const writer = new Typewriter(target, {
-      loop: true,
-      typeSpeed: 80,
-      deleteSpeed: 80,
-      typeColor: 'red'
-    })
+const writer = new Typewriter(target, {
+  loop: true,
+  typeSpeed: 80,
+  deleteSpeed: 80,
+  typeColor: 'red'
+})
 
-    writer
-      .type('You can type')
-      .rest(500)
-      .changeOps({ deleteSpeed: 80 })
-      .remove(4)
-      .type('edit')
-      .rest(500)
-      .remove(4)
-      .type('synchronize callbacks')
-      .rest(500)
-      .changeOps({ deleteSpeed: 20 })
-      .remove(21)
-      .type('change options on the go')
-      .rest(500)
-      .clear()
-      .start()
+writer
+  .type('You can type')
+  .rest(500)
+  .changeOps({ deleteSpeed: 80 })
+  .remove(4)
+  .type('edit')
+  .rest(500)
+  .remove(4)
+  .type('synchronize callbacks')
+  .rest(500)
+  .changeOps({ deleteSpeed: 20 })
+  .remove(21)
+  .type('change options on the go')
+  .rest(500)
+  .clear()
+  .start()
       </pre>
     </section>
 
     <section class="demo">
       <div class="test2 test"></div>
       <pre class="code-block">
-    const writer = new Typewriter(target, {
-      loop: true, 
-      typeColor: 'red' 
-    })
+const writer = new Typewriter(target, {
+  loop: true, 
+  typeColor: 'red' 
+})
 
-    writer
-      .strings(
-        400,
-        "Set many strings",
-        "In just one call", 
-        "Using the 'strings' method"
-      )
-      .start()
+writer
+  .strings(
+    400,
+    "Set many strings",
+    "In just one call", 
+    "Using the 'strings' method"
+  )
+  .start()
       </pre>
     </section>
 
@@ -83,34 +83,40 @@
         <div class="test3 test"></div><div class="test4 test"></div>
       </div>
       <pre class="code-block">
-    const writer1 = new Typewriter(target1, { typeSpeed: 60 })
-    const writer2 = new Typewriter(target2, { typeSpeed: 60 })
+const writer1 = new Typewriter(target1, {
+  typeSpeed: 60 
+})
 
-    writer1
-      .type('Combo typewriters to')
-      .removeCursor()
-      .then(writer2.start.bind(writer2))
-      .start()
+const writer2 = new Typewriter(target2, { 
+  typeSpeed: 60 
+})
 
-    writer2
-      .type("create complex effects")
-      .rest(500)
-      .clear()
-      .changeTypeColor('red')
-      .type("defy user expectations")
-      .rest(500)
-      .clear()
-      .changeTypeColor('blue')
-      .type("generate a custom loop")
-      .rest(500)
-      .clear()
-      .changeTypeColor('black')
-      .then(writer1.start.bind(writer1))
+writer1
+  .type('Combo typewriters to')
+  .removeCursor()
+  .then(writer2.start.bind(writer2))
+  .start()
+
+writer2
+  .type("create complex effects")
+  .rest(500)
+  .clear()
+  .changeTypeColor('red')
+  .type("defy user expectations")
+  .rest(500)
+  .clear()
+  .changeTypeColor('blue')
+  .type("generate a custom loop")
+  .rest(500)
+  .clear()
+  .changeTypeColor('black')
+  .then(writer1.start.bind(writer1))
       </pre>
     </section>
 
     <footer>
-       MIT. © 2018 Christopher Cavalea
+      <p>MIT. © 2018 Christopher Cavalea</p>
+      <a class="github" href="https://github.com/ChrisCavs/type-write.js">On GitHub</a>
     </footer>
   </main>
 </body>
