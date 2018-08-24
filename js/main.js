@@ -9,10 +9,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const about3 = document.querySelector('.about3')
   const about4 = document.querySelector('.about4')
 
-  const aboutTw1 = new Typewriter(about1)
-  const aboutTw2 = new Typewriter(about2)
-  const aboutTw3 = new Typewriter(about3)
-  const aboutTw4 = new Typewriter(about4)
+  const aboutTw1 = new Typewriter(about1, { animateCursor: false })
+  const aboutTw2 = new Typewriter(about2, { animateCursor: false })
+  const aboutTw3 = new Typewriter(about3, { animateCursor: false })
+  const aboutTw4 = new Typewriter(about4, { animateCursor: false })
 
   const clearAll = () => {
     aboutTw1.clearText()
@@ -75,4 +75,51 @@ document.addEventListener('DOMContentLoaded', () => {
     .rest(500)
     .clear()
     .start()
+
+  // DEMO 2
+
+  const test2 = document.querySelector('.test2')
+
+  const testTw2 = new Typewriter(test2, { 
+    loop: true, 
+    typeColor: 'red' 
+  })
+
+  testTw2
+    .strings(
+      400,
+      "Set many strings",
+      "In just one call", 
+      "Using the 'strings' method"
+    )
+    .start()
+  
+  // DEMO 3
+
+  const test3 = document.querySelector('.test3')
+  const test4 = document.querySelector('.test4')
+
+  const testTw3 = new Typewriter(test3, { typeSpeed: 80})
+  const testTw4 = new Typewriter(test4, { typeSpeed: 80 })
+
+  testTw3
+    .type('Combo typewriters to')
+    .removeCursor()
+    .then(testTw4.start.bind(testTw4))
+    .start()
+
+  testTw4
+    .type("create complex effects")
+    .rest(500)
+    .clear()
+    .changeTypeColor('red')
+    .type("defy user expectations")
+    .rest(500)
+    .clear()
+    .changeTypeColor('blue')
+    .type("generate a custom loop")
+    .rest(500)
+    .clear()
+    .changeTypeColor('black')
+    .then(testTw3.start.bind(testTw3))
 })

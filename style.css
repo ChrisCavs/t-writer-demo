@@ -34,6 +34,14 @@ a:hover {
 .test {
   height: 50px;
 
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
+}
+
+.test3, .test4 {
+  display: inline-block;
+}
+
+.test3 {
+  margin-right: 8px;
 }

@@ -30,7 +30,7 @@
     <section class="demo">
       <div class="test1 test"></div>
       <pre class="code-block">
-    const writer = new Typewriter(test1, {
+    const writer = new Typewriter(target, {
       loop: true,
       typeSpeed: 80,
       deleteSpeed: 80,
@@ -59,12 +59,24 @@
     <section class="demo">
       <div class="test2 test"></div>
       <pre class="code-block">
+    const writer = new Typewriter(target, {
+      loop: true, 
+      typeColor: 'red' 
+    })
 
+    writer
+      .strings(
+        400,
+        "Set many strings",
+        "In just one call", 
+        "Using the 'strings' method"
+      )
+      .start()
       </pre>
     </section>
 
     <section class="demo">
-      <div class="test3 test"></div>
+      <div class="test3 test"></div><div class="test4 test"
       <pre class="code-block">
 
       </pre>
