@@ -76,9 +76,33 @@
     </section>
 
     <section class="demo">
-      <div class="test3 test"></div><div class="test4 test"
+      <div class="flex">
+        <div class="test3 test"></div><div class="test4 test"></div>
+      </div>
       <pre class="code-block">
+    const writer1 = new Typewriter(target1, { typeSpeed: 80 })
+    const writer2 = new Typewriter(target2, { typeSpeed: 80 })
 
+    writer1
+      .type('Combo typewriters to')
+      .removeCursor()
+      .then(writer2.start.bind(writer2))
+      .start()
+
+    writer2
+      .type("create complex effects")
+      .rest(500)
+      .clear()
+      .changeTypeColor('red')
+      .type("defy user expectations")
+      .rest(500)
+      .clear()
+      .changeTypeColor('blue')
+      .type("generate a custom loop")
+      .rest(500)
+      .clear()
+      .changeTypeColor('black')
+      .then(writer1.start.bind(writer1))
       </pre>
     </section>
 

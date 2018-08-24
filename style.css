@@ -38,8 +38,8 @@ a:hover {
   font-weight: bold;
 }
 
-.test3, .test4 {
-  display: inline-block;
+.flex {
+  display: flex;
 }
 
 .test3 {
