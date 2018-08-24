@@ -9,10 +9,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const about3 = document.querySelector('.about3')
   const about4 = document.querySelector('.about4')
 
-  const aboutTw1 = new Typewriter(about1, { animateCursor: false })
-  const aboutTw2 = new Typewriter(about2, { animateCursor: false })
-  const aboutTw3 = new Typewriter(about3, { animateCursor: false })
-  const aboutTw4 = new Typewriter(about4, { animateCursor: false })
+  const aboutTw1 = new Typewriter(about1, { animateCursor: 'hide', typeSpeed: 60 })
+  const aboutTw2 = new Typewriter(about2, { animateCursor: 'hide', typeSpeed: 60 })
+  const aboutTw3 = new Typewriter(about3, { animateCursor: 'hide', typeSpeed: 60 })
+  const aboutTw4 = new Typewriter(about4, { animateCursor: 'hide', typeSpeed: 60 })
 
   const clearAll = () => {
     aboutTw1.clearText()
@@ -99,8 +99,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const test3 = document.querySelector('.test3')
   const test4 = document.querySelector('.test4')
 
-  const testTw3 = new Typewriter(test3, { typeSpeed: 80})
-  const testTw4 = new Typewriter(test4, { typeSpeed: 80 })
+  const testTw3 = new Typewriter(test3, { typeSpeed: 60, deleteSpeed: 30 })
+  const testTw4 = new Typewriter(test4, { typeSpeed: 60, deleteSpeed: 30 })
 
   testTw3
     .type('Combo typewriters to')
