@@ -1,4 +1,4 @@
-import Typewriter from '../../type-write/dist/type-write.js'
+import Typewriter from 't-writer.js'
 
 document.addEventListener('DOMContentLoaded', () => {
 
